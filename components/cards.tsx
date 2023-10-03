@@ -4,7 +4,6 @@ import {Button, Drawer, Dropdown, MenuProps} from "antd";
 import {SmallDashOutlined} from "@ant-design/icons";
 import HistorialDrawer from "@/components/historialDrawer";
 import NuevaSolicitud from "@/components/nuevaSolicitud";
-import {Directus} from "@directus/sdk";
 
 const items: MenuProps['items'] = [
     {
@@ -18,7 +17,7 @@ const items: MenuProps['items'] = [
 ];
 
 interface CardsProps {
-    id: number;
+    id: 1;
     nombre: string;
     apellido: string;
     colonia: string;

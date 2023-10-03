@@ -11,6 +11,8 @@
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@directus/sdk": "10.3.5",
+    "@supabase/auth-helpers-nextjs": "^0.8.1",
+    "@supabase/supabase-js": "^2.34.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "antd": "^5.7.0",
@@ -29,6 +31,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-query": "^3.39.3",
+    "sweetalert2": "^11.7.28",
     "tailwind-merge": "^1.13.2",
     "tailwindcss": "3.3.2",
     "tailwindcss-animate": "^1.0.6",

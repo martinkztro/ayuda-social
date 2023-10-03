@@ -1,12 +1,13 @@
 'use client'
-import {Avatar, Button, Drawer, Input} from "antd";
-import React, {useState} from "react";
-import {MenuOutlined, UserOutlined, LogoutOutlined, PlusOutlined} from "@ant-design/icons";
+import { Avatar, Button, Drawer, Input } from "antd";
+import React, { useState } from "react";
+import { MenuOutlined, UserOutlined, LogoutOutlined, PlusOutlined } from "@ant-design/icons";
 import NuevoBeneficiario from '../components/nuevoBeneficiario'
 
 const HeaderComponent: React.FC = () => {
-    const [ open, setOpen ] = useState(false);
-    const [ openBeneficiarioNuevo, setOpenBeneficiarioNuevo ] = useState(false)
+
+    const [open, setOpen] = useState(false);
+    const [openBeneficiarioNuevo, setOpenBeneficiarioNuevo] = useState(false)
 
     const showDrawer = () => {
         setOpen(true);
@@ -28,7 +29,7 @@ const HeaderComponent: React.FC = () => {
         setOpenBeneficiarioNuevo(false)
     };
 
-    const user = "Teleton"
+    const user = "Teleton";
 
     return (
         <>
@@ -44,7 +45,7 @@ const HeaderComponent: React.FC = () => {
                     <div className="flex flex-col content-between h-full">
                         <div className="flex justify-center align-middle">
                             <div className="flex flex-col align-middle justify-center items-center">
-                                <Avatar size={64} icon={<UserOutlined/>}/>
+                                <Avatar size={64} icon={<UserOutlined />} />
                                 <h1 className="text-2xl text-gray-800">{user}</h1>
                             </div>
                         </div>
@@ -76,7 +77,7 @@ const HeaderComponent: React.FC = () => {
                     shape="circle"
                     onClick={setOpenBeneficiario}
                 >
-                    <PlusOutlined  style={{ display:"block" }} />
+                    <PlusOutlined style={{ display: "block" }} />
                 </Button>
             </div>
             <Drawer
@@ -91,7 +92,10 @@ const HeaderComponent: React.FC = () => {
                 <NuevoBeneficiario onClose={setCloseBeneficiario} />
             </Drawer>
         </>
-    );
+
+    )
+
+
 }
 
 export default HeaderComponent
